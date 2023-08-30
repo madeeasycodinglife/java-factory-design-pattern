@@ -8,6 +8,14 @@ exposing the instantiation logic to the client and refers to the newly created o
 Let's consider a simple example where we have different types of shapes (e.g., Circle and Rectangle)
 that we want to create using a factory.
 
+              Client
+                |
+           ShapeFactory
+           /         \
+      Circle       Rectangle
+                   
+
+
 ```java
 // Step 1: Define a common interface for shapes
 interface Shape {
